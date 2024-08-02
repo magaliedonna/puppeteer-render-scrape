@@ -1,5 +1,6 @@
 const express = require("express");
-const { scrapeLogic } = require("./scrapeLogic");
+const puppeteer = require("puppeteer");
+require("dotenv").config();
 const app = express();
 
 const PORT = process.env.PORT || 4000;
